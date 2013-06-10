@@ -15,6 +15,13 @@
 -include device/semc/zeus-common/BoardConfigCommon.mk
 -include vendor/semc/phoenix/BoardConfigVendor.mk
 
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/semc/phoenix/bluedroid
+
+# Boot Animation
+TARGET_SCREEN_HEIGHT := 854
+TARGET_SCREEN_WIDTH := 480
+
 # Kernel
 TARGET_KERNEL_CONFIG := nAa_phoenix_defconfig
 
@@ -22,7 +29,5 @@ TARGET_KERNEL_CONFIG := nAa_phoenix_defconfig
 SOMC_CFG_SENSORS_ACCEL_BMA150_INPUT := yes
 SOMC_CFG_SENSORS_PROXIMITY_SHARP_GP2 := yes
 
+# Assert
 TARGET_OTA_ASSERT_DEVICE := MT25i,MT25a,phoenix
-
-#Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/semc/phoenix/bluedroid
