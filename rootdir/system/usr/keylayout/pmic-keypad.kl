@@ -1,9 +1,9 @@
-# file SEMC-DBZ1_keypad.kl
-# this corresponds to kernel/arch/arm/mach-msm/keypad-zeus.*
+# file pmic-keypad.kl
+# this corresponds to kernel/arch/arm/mach-msm/keypad-phoenix.c
 #
 # defines for values are in frameworks/base/include/ui/KeycodeLabels.h
 
-# KEY_MENU, KEY_HOME, KEY_BACK
+# KEY_MENU, KEY_HOME, KEY_BACK, KEY_SEARCH
 key 139   MENU
 key 102   HOME             WAKE_DROPPED
 key 158   BACK

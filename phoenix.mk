@@ -35,12 +35,8 @@ PRODUCT_COPY_FILES += \
 # Device specific configs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/system/usr/idc/cy8ctma300_touch.idc:system/usr/idc/cy8ctma300_touch.idc \
-    $(LOCAL_PATH)/rootdir/system/usr/keychars/keypad-zeus.kcm:system/usr/keychars/keypad-zeus.kcm \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/atdaemon.kl:system/usr/keylayout/atdaemon.kl \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/keypad-game-zeus.kl:system/usr/keylayout/keypad-game-zeus.kl \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/keypad-phone-zeus.kl:system/usr/keylayout/keypad-phone-zeus.kl \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/keypad-zeus.kl:system/usr/keylayout/keypad-zeus.kl \
-    $(LOCAL_PATH)/rootdir/system/usr/keylayout/simple_remote.kl:system/usr/keylayout/simple_remote.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/pm8xxx-keypad.kl:system/usr/keylayout/pm8xxx-keypad.kl \
+    $(LOCAL_PATH)/rootdir/system/usr/keylayout/pmic-keypad.kl:system/usr/keylayout/pmic-keypad.kl \
     $(LOCAL_PATH)/rootdir/system/etc/sensors.conf:system/etc/sensors.conf
 
 # Device properties
