@@ -15,9 +15,6 @@
 # Inherit device configuration
 $(call inherit-product, device/semc/phoenix/full_phoenix.mk)
 
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/gsm.mk)
-
 # Inherit some common CM stuff.
 $(call inherit-product, vendor/cm/config/common_mini_phone.mk)
 
@@ -33,7 +30,10 @@ PRODUCT_PACKAGES += \
     PhaseBeam
 
 # Set build fingerprint / ID / Product Name ect.
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=MT25i BUILD_FINGERPRINT="SEMC/MT25i_1254-2184/MT25i:4.0.4/4.1.B.0.587/tL1_3w:user/release-keys" PRIVATE_BUILD_DESC="MT25i-user 4.0.4 4.1.B.0.587 tL1_3w test-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=MT25i \
+    BUILD_FINGERPRINT="SEMC/MT25i_1254-2184/MT25i:4.0.4/4.1.B.0.587/tL1_3w:user/release-keys" \
+    PRIVATE_BUILD_DESC="MT25i-user 4.0.4 4.1.B.0.587 tL1_3w test-keys"
 
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_phoenix
