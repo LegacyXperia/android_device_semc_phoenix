@@ -24,3 +24,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=MT25i BUILD_FINGERPRINT="SEMC/MT25i
 # Device identifier. This must come after all inclusions
 PRODUCT_NAME := cm_phoenix
 PRODUCT_DEVICE := phoenix
+
+# Custom tag for unofficial builds
+TARGET_UNOFFICIAL_BUILD_ID := LegacyXperia
